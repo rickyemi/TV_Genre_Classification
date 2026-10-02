@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tv-genre-classification"
+version = "1.0.0"
+description = "Production ML pipeline classifying TV shows into Comedy, Drama and Reality, plus a J ~ C regression"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "YO (rickyemi)" }]
+keywords = ["classification", "media", "genre", "xgboost", "svm", "deep learning", "data quality"]
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+filterwarnings = ["ignore::DeprecationWarning", "ignore::FutureWarning", "ignore::UserWarning"]

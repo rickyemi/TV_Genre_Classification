@@ -1,0 +1,28 @@
+Model,Test,Value,Rule,Result
+SSGMM,1 accuracy CI lower bound,0.800,> 0.61 (always-Comedy),PASS
+SSGMM,2 repeated CV accuracy (SD),0.904 (0.025),SD <= 0.05,PASS
+SSGMM,3 noise 0.25 SD: accuracy drop,0.383,<= 0.05,FAIL
+SSGMM,4 +20% missing: accuracy drop,0.108,<= 0.05,FAIL
+SSGMM,5 A unit errors: drop raw / cleaned,0.000 / 0.000,cleaned <= 0.01,PASS
+SSGMM,6 adversarial validation AUC,0.550,<= 0.60,PASS
+SSGMM,7 10% label noise: accuracy drop,0.017,<= 0.05,PASS
+SSGMM,8 permutation: real vs null macro-F1,0.798 vs 0.290,gap >= 0.20,PASS
+SSGMM,11 edge cases,5/5,all pass,PASS
+XGBoost,1 accuracy CI lower bound,0.817,> 0.61 (always-Comedy),PASS
+XGBoost,2 repeated CV accuracy (SD),0.899 (0.022),SD <= 0.05,PASS
+XGBoost,3 noise 0.25 SD: accuracy drop,0.375,<= 0.05,FAIL
+XGBoost,4 +20% missing: accuracy drop,0.183,<= 0.05,FAIL
+XGBoost,5 A unit errors: drop raw / cleaned,0.000 / 0.000,cleaned <= 0.01,PASS
+XGBoost,6 adversarial validation AUC,0.550,<= 0.60,PASS
+XGBoost,7 10% label noise: accuracy drop,0.008,<= 0.05,PASS
+XGBoost,8 permutation: real vs null macro-F1,0.818 vs 0.279,gap >= 0.20,PASS
+XGBoost,11 edge cases,5/5,all pass,PASS
+SVM-RBF,1 accuracy CI lower bound,0.825,> 0.61 (always-Comedy),PASS
+SVM-RBF,2 repeated CV accuracy (SD),0.902 (0.020),SD <= 0.05,PASS
+SVM-RBF,3 noise 0.25 SD: accuracy drop,0.333,<= 0.05,FAIL
+SVM-RBF,4 +20% missing: accuracy drop,0.100,<= 0.05,FAIL
+SVM-RBF,5 A unit errors: drop raw / cleaned,0.000 / 0.000,cleaned <= 0.01,PASS
+SVM-RBF,6 adversarial validation AUC,0.550,<= 0.60,PASS
+SVM-RBF,7 10% label noise: accuracy drop,0.000,<= 0.05,PASS
+SVM-RBF,8 permutation: real vs null macro-F1,0.826 vs 0.252,gap >= 0.20,PASS
+SVM-RBF,11 edge cases,5/5,all pass,PASS

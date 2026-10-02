@@ -1,0 +1,16 @@
+Model,case,passed,detail
+SSGMM,all_missing,True,P range 0.28-0.42
+SSGMM,extreme_x100,True,P range 0.00-1.00
+SSGMM,extreme_negative,True,P range 0.00-1.00
+SSGMM,single_row,True,P range 0.00-1.00
+SSGMM,deterministic,True,
+XGBoost,all_missing,True,P range 0.29-0.38
+XGBoost,extreme_x100,True,P range 0.01-0.96
+XGBoost,extreme_negative,True,P range 0.01-0.97
+XGBoost,single_row,True,P range 0.02-0.95
+XGBoost,deterministic,True,
+SVM-RBF,all_missing,True,P range 0.17-0.42
+SVM-RBF,extreme_x100,True,P range 0.02-0.95
+SVM-RBF,extreme_negative,True,P range 0.02-0.95
+SVM-RBF,single_row,True,P range 0.03-0.93
+SVM-RBF,deterministic,True,

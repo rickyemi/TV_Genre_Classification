@@ -1,0 +1,93 @@
+{
+  "selected_features": [
+    "C",
+    "I",
+    "L",
+    "M",
+    "N"
+  ],
+  "strategy": "S5 latent basis",
+  "strategies": {
+    "S1 FDR + MI + VIF": [
+      "A",
+      "C",
+      "G",
+      "L",
+      "M",
+      "N"
+    ],
+    "S2 FDR + MI": [
+      "A",
+      "C",
+      "G",
+      "J",
+      "L",
+      "M",
+      "N"
+    ],
+    "S3 FDR only": [
+      "A",
+      "C",
+      "G",
+      "I",
+      "J",
+      "L",
+      "M",
+      "N"
+    ],
+    "S4 all cleaned": [
+      "A",
+      "B",
+      "C",
+      "E",
+      "G",
+      "H",
+      "I",
+      "J",
+      "L",
+      "M",
+      "N",
+      "O"
+    ],
+    "S5 latent basis": [
+      "C",
+      "I",
+      "L",
+      "M",
+      "N"
+    ]
+  },
+  "dropped_vif": [
+    "J"
+  ],
+  "latent_basis": {
+    "block": [
+      "B",
+      "C",
+      "I",
+      "L",
+      "M",
+      "N",
+      "J"
+    ],
+    "rank": 5,
+    "basis": [
+      "C",
+      "I",
+      "L",
+      "M",
+      "N"
+    ],
+    "r2_from_basis": {
+      "B": 1.0,
+      "C": 1.0,
+      "I": 1.0,
+      "L": 1.0,
+      "M": 1.0,
+      "N": 1.0,
+      "J": 1.0,
+      "A": 0.9962439650717151
+    },
+    "basis_rank": 5
+  }
+}

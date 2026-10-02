@@ -1,0 +1,22 @@
+file,check,value,detail
+training,D duplicates I,1.000 identical,"56 missing in D, 0 in I"
+training,F duplicates I,1.000 identical,"56 missing in F, 0 in I"
+training,K duplicates I,1.000 identical,"0 missing in K, 0 in I"
+training,A x100 unit error,26 rows (4.3%),no |A| between 5.22 and 12.20
+training,missing D,56 rows,9.3%
+training,missing F,56 rows,9.3%
+training,missing J,42 rows,7.0%
+training,duplicate shows,0,
+training,stored precision (A),16 decimals,
+test,D duplicates I,1.000 identical,"24 missing in D, 0 in I"
+test,F duplicates I,1.000 identical,"24 missing in F, 0 in I"
+test,K duplicates I,1.000 identical,"0 missing in K, 0 in I"
+test,A x100 unit error,23 rows (5.8%),no |A| between 4.52 and 32.11
+test,missing D,24 rows,6.0%
+test,missing F,24 rows,6.0%
+test,missing J,28 rows,7.0%
+test,duplicate shows,0,
+test,stored precision (A),9 decimals,test file was exported at lower precision
+both,A x100 confirmed by regression,median ratio 99.9,"IQR 99.7-100.1; R2 of A on C,I,L,M,N = 0.9981"
+training,genre labels,"{'Comedy': 367, 'Drama': 127, 'Reality': 106}",invalid: none
+test,genre labels,400 missing,unknown by design

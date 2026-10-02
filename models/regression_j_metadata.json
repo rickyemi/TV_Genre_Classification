@@ -1,0 +1,83 @@
+{
+  "best_model": "Polynomial",
+  "features": [
+    "C",
+    "B",
+    "M"
+  ],
+  "support_features": [
+    "B",
+    "M"
+  ],
+  "uncorrelated_as_measured_pair": [
+    "G",
+    "M"
+  ],
+  "rule": "as measured: |r| < 0.1 and p >= 0.05 for C-X1, C-X2, X1-X2; orthogonalised: sequential residualisation fitted on the Train split",
+  "selection": "lowest 10-fold CV RMSE, one-standard-error rule (simplest model within 1 SE)",
+  "ols_orthogonalised": {
+    "Intercept": -0.5795181629957045,
+    "C": 0.3939109119960544,
+    "B": 0.28975999759987847,
+    "M": -2.614034399542481
+  },
+  "ols_r2": 0.9597733936202699,
+  "ols_adj_r2": 0.9596103127835953,
+  "vif_orthogonalised": {
+    "C": 1.0000000000000002,
+    "B": 1.0,
+    "M": 1.0000000000000002
+  },
+  "vif_as_measured": {
+    "C": 5.389340971426734,
+    "B": 11.201459683894143,
+    "M": 7.1662616214495625
+  },
+  "breusch_pagan_p": 0.01481341435150854,
+  "predictor_correlation": [
+    {
+      "split": "Train",
+      "max_abs_r_as_measured": 0.7207093499523142,
+      "max_abs_r_orthogonalised": 1.2750529076500352e-15
+    },
+    {
+      "split": "Test",
+      "max_abs_r_as_measured": 0.7624067406741651,
+      "max_abs_r_orthogonalised": 0.11567163985404663
+    }
+  ],
+  "poly_cv_rmse_by_degree": {
+    "1": 0.28893394313381837,
+    "2": 0.27143471676988584,
+    "3": 0.2686160901645901,
+    "4": 0.3038059068926618
+  },
+  "poly_degree": 3,
+  "spline_cv_rmse_by_knots": {
+    "3": 0.28653905625205595,
+    "4": 0.286944592469472,
+    "5": 0.2854099529644988,
+    "6": 0.2865271098733843,
+    "8": 0.2882180914279213
+  },
+  "spline_knots": 5,
+  "svr_params": {
+    "svr__C": 91.33995846860967,
+    "svr__epsilon": 0.3503398491158687,
+    "svr__gamma": 0.0039459088110999985
+  },
+  "xgb_params": {
+    "learning_rate": 0.05405736440453861,
+    "max_depth": 2.0,
+    "min_child_weight": 13.0,
+    "n_estimators": 395.0,
+    "reg_lambda": 0.18349072049055454,
+    "subsample": 0.8736932106048627
+  },
+  "lowest_cv_rmse_model": "Polynomial",
+  "one_se_limit": 0.2780492519036924,
+  "n_observed": 930,
+  "n_train": 744,
+  "n_test": 186,
+  "n_reconstructed_check": 70
+}

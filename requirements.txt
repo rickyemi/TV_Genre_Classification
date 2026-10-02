@@ -1,0 +1,22 @@
+# Core scientific stack (pinned: the saved .joblib models need matching
+# scikit-learn / xgboost / torch versions to load reliably)
+numpy==2.4.4
+pandas==3.0.2
+scipy==1.17.1
+scikit-learn==1.8.0
+xgboost==3.2.0
+torch==2.14.0
+joblib==1.5.3
+
+# Statistics and plotting
+statsmodels==0.15.0
+matplotlib==3.10.9
+
+# Notebooks
+jupyter_client==8.10.0
+ipykernel==7.3.0
+nbformat==5.11.1
+nbconvert==7.17.1
+
+# Testing
+pytest==9.1.1

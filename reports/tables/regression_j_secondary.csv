@@ -1,0 +1,7 @@
+model,R2,n,slope
+"J ~ C (OLS, training file)",0.102,558,
+J ~ C x genre (training file),0.21313,558,
+J ~ C within Comedy,0.29697,345,0.52463
+J ~ C within Drama,3e-05,117,-0.00848
+J ~ C within Reality,0.02512,96,-0.20899
+"J ~ B + C + I + L + M + N (exact identity, Test)",1.0,186,
