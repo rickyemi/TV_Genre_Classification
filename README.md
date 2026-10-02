@@ -5,7 +5,7 @@
 **Author:** YO ([@rickyemi](https://github.com/rickyemi))
 
 ## Goal
-Several business units supply anonymised features (A–O) for each TV show. Marketing campaigns depend on classifying shows as **Comedy, Drama or Reality**, so accuracy is critical. The project (1) audits and cleans the raw, unvalidated inputs,(2) classifies the 400 shows of unknown genre with probability scores, and (2) predicts **Feature J from Feature C plus two uncorrelated supporting features**.
+Several business units supply anonymised features (A–O) for each TV show. Marketing campaigns depend on classifying shows as **Comedy, Drama or Reality**, so accuracy is critical. The project (1) audits and cleans the raw, unvalidated inputs,(2) classifies the 400 shows of unknown genre with probability scores, and (3) predicts **Feature J from Feature C plus two uncorrelated supporting features**.
 
 ## Data
 | Item | Value |
